@@ -1,2 +1,2 @@
-# preview
-Landing page y preview de plataforma
+# PREVIEW
+Landing page y preview de pantallas de plataforma
