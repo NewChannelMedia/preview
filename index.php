@@ -91,28 +91,28 @@
         <div class="row">
           <div class="col-md-3 col-services">
             <figure>
-              <img class="img-services" src="img/intermed/logoSimpleColor.png" alt="">
+              <span class="img-services fa fa-user-md"></span>
             </figure>
             <h4>Flag</h4>
             <p>Harum sunt atque quod reprehenderit voluptates dolores nisi quas dolorum ipsa ad consequatur impedit.</p>
           </div>
           <div class="col-md-3 col-services">
             <figure>
-              <img class="img-services" src="img/intermed/logoSimpleColor.png" alt="">
+              <span class="img-services fa fa-hospital-o"></span>
             </figure>
             <h4>Search</h4>
             <p>Quaerat, quisquam, perspiciatis, ipsam eveniet a ducimus repellat rem nobis similique.</p>
           </div>
           <div class="col-md-3 col-services">
             <figure>
-              <img class="img-services img-margin" src="img/intermed/logoSimpleColor.png" alt="">
+              <span class="img-services fa fa-ambulance"></span>
             </figure>
             <h4>World Map</h4>
             <p>Aperiam iure doloremque tempora explicabo praesentium eos dicta laudantium corrupti ipsam.</p>
           </div>
           <div class="col-md-3 col-services">
             <figure>
-              <img class="img-services img-margin" src="img/intermed/logoSimpleColor.png" alt="">
+              <span class="img-services fa fa-stethoscope"></span>
             </figure>
             <h4>World Map</h4>
             <p>Aperiam iure doloremque tempora explicabo praesentium eos dicta laudantium corrupti ipsam.</p>

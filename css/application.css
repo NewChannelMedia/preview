@@ -242,6 +242,10 @@ html {
   height: auto;
   margin-top: 20px;
   margin-bottom: 30px;
+  font-size: 80px;
+  color: rgb(62,151,206);
+  -webkit-text-shadow: rgba(0, 0, 0, .2) 0 0 15px;
+  text-shadow: rgba(0, 0, 0, .2) 0 0 15px;
 }
 .img-services.img-margin {
   margin-top: 14px;
@@ -458,7 +462,7 @@ html {
 }
 
 .footer-section {
-  background: rgb(62,151,206);
+    background: rgb(62,151,206);
   text-align: left;
   padding: 60px 0;
 }
