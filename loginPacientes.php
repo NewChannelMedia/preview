@@ -40,14 +40,15 @@
         <section class="sign-in-up-content">
           <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-10 col-xs-10 col-lg-offset-3 col-md-offset-3 col-sm-offset-1 col-xs-offset-1">
-              <form class="sign-in-up-form" action="./loginPacientes.php" role="form">
+              <form class="sign-in-up-form" role="form" method="post" onsubmit="return false;" autocomplete="off">
+                <input type="hidden" id="tipoUsuario">
                 <div class="form-group">
-                  <input class="form-control input-lg" id="usuario" type="email" placeholder="Correo" autocomplete="off">
+                  <input class="form-control input-lg" id="usuario" name="usuario" type="email" placeholder="Usuario">
                 </div>
                 <div class="form-group">
-                  <input class="form-control input-lg" id="contraseña" type="password" placeholder="Contraseña" autocomplete="off">
+                  <input class="form-control input-lg" id="contraseña" name="contrasena" type="password" placeholder="Contraseña">
                 </div>
-                <button class="btn btn-success bordered btn-lg btn-block" type="submit">Entrar</button>
+                <button class="btn btn-success bordered btn-lg btn-block" type="submit" onclick="iniciarSesion()">Entrar</button>
               </form>
             </div>
           </div>
@@ -90,6 +91,7 @@
     </section>
     <script src="js/jquery-2.1.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/assets/application.js"></script>
+    <script src="js/application.js"></script>
+    <script src="js/utils.js"></script>
   </body>
 </html>
