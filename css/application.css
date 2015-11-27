@@ -570,9 +570,7 @@ html {
 .sign-in-up-section {
   padding: 100px 0;
 }
-.sign-in-up-section .container {
-  max-width: 460px;
-}
+
 .sign-in-up-section .img-logo {
   display: inline-block;
   margin-left: auto;
@@ -583,7 +581,6 @@ html {
 }
 
 .sign-in-up-content {
-  border-radius: 4px;
   margin-bottom: 20px;
   padding: 15px;
 }
@@ -701,4 +698,9 @@ html {
   width: 100%;
   height: 100%;
   display: block;
+}
+
+hr {
+  border-top: 2px solid #ffffff!important;
+  margin: 0 auto!important;
 }
