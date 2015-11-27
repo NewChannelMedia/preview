@@ -33,89 +33,43 @@
       </ul>
     </nav>
 
-    <header class="jumbotron" role="banner">
+    <header class="jumbotron intern" role="banner">
       <div class="bg-cover"></div>
-      <div class="container-fluid">
+      <div class="container">
         <div class="row">
-          <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <figure class="text-center">
               <a href="./index.php">
                 <img class="img-logo" src="img/intermed/logoWhite.png" alt="">
               </a>
             </figure>
-            <h3>¡Conéctate con tu entorno profesional como nunca antes!</h3>
-            <br><br>
-            <p class="">
-              Intermed<sup>®</sup> se encuentra en etapa de desarrollo, pero puedes ver un preview del sistema ahora mismo:<br><br>
-              <a class="btn btn-white bordered btn-lg" href="./loginPacientes.php">Preview Pacientes</a>
-              <a class="btn btn-white bordered btn-lg" href="./loginMedicos.php">Preview Medicos</a>
-            </p>
-          </div>
-          <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12">
-            <div id="slider1" class="csslider infinity">
-              <ul>
-                <li>
-                  <figure>
-                    <img class="img-iPhone visible-sm visible-xs" src="img/phone/1.png" alt="">
-                    <img class="img-lap visible-lg visible-md" src="img/lap/1.png" alt="">
-                  </figure>
-                </li>
-                <li>
-                  <figure>
-                    <img class="img-iPhone visible-sm visible-xs" src="img/phone/2.png" alt="">
-                    <img class="img-lap visible-lg visible-md" src="img/lap/2.png" alt="">
-
-                  </figure>
-                </li>
-                <li>
-                  <figure>
-                    <img class="img-iPhone visible-sm visible-xs" src="img/phone/3.png" alt="">
-                    <img class="img-lap visible-lg visible-md" src="img/lap/1.png" alt="">
-                  </figure>
-                </li>
-                <li>
-                  <figure>
-                    <img class="img-iPhone visible-sm visible-xs" src="img/phone/1.png" alt="">
-                    <img class="img-lap visible-lg visible-md" src="img/lap/4.png" alt="">
-                  </figure>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>
     </header>
 
-    <section class="services-section" id="section-1">
+    <section class="services-section intern" id="section-1">
       <div class="container">
         <div class="row">
           <div class="col-md-3 col-services">
             <figure>
               <span class="img-services fa fa-user-md"></span>
             </figure>
-            <h4>Flag</h4>
-            <p>Harum sunt atque quod reprehenderit voluptates dolores nisi quas dolorum ipsa ad consequatur impedit.</p>
           </div>
           <div class="col-md-3 col-services">
             <figure>
               <span class="img-services fa fa-hospital-o"></span>
             </figure>
-            <h4>Search</h4>
-            <p>Quaerat, quisquam, perspiciatis, ipsam eveniet a ducimus repellat rem nobis similique.</p>
           </div>
           <div class="col-md-3 col-services">
             <figure>
               <span class="img-services fa fa-ambulance"></span>
             </figure>
-            <h4>World Map</h4>
-            <p>Aperiam iure doloremque tempora explicabo praesentium eos dicta laudantium corrupti ipsam.</p>
           </div>
           <div class="col-md-3 col-services">
             <figure>
               <span class="img-services fa fa-stethoscope"></span>
             </figure>
-            <h4>World Map</h4>
-            <p>Aperiam iure doloremque tempora explicabo praesentium eos dicta laudantium corrupti ipsam.</p>
           </div>
         </div>
       </div>
