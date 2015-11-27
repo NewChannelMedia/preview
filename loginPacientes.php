@@ -41,7 +41,7 @@
           <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-10 col-xs-10 col-lg-offset-3 col-md-offset-3 col-sm-offset-1 col-xs-offset-1">
               <form class="sign-in-up-form" role="form" method="post" onsubmit="return false;" autocomplete="off">
-                <input type="hidden" id="tipoUsuario">
+                <input type="hidden" id="tipoUsuario" value="P">
                 <div class="form-group">
                   <input class="form-control input-lg" id="usuario" name="usuario" type="email" placeholder="Usuario">
                 </div>
@@ -56,7 +56,7 @@
         <hr>
         <section class="sign-in-up-content">
           <div class="row">
-            <form class="sign-in-up-form" action="./loginPacientes.php" role="form">
+            <form class="sign-in-up-form" action="./loginPacientes.php" role="form" method="post" onsubmit="return false;">
               <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1">
                 <div class="row">
                   <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -76,13 +76,13 @@
               <div class="col-lg-6 col-md-6 col-sm-10 col-xs-10 col-lg-offset-3 col-md-offset-3 col-sm-offset-1 col-xs-offset-1">
                 <div class="checkbox">
                   <label class="text-muted text-center">
-                    <input type="checkbox" value="">
+                    <input type="checkbox" id="terminos">
                     He leído los terminos y la politica de privacidad
                   </label>
                 </div>
               </div>
               <div class="col-lg-6 col-md-6 col-sm-10 col-xs-10 col-lg-offset-3 col-md-offset-3 col-sm-offset-1 col-xs-offset-1">
-                <button class="btn btn-success bordered btn-lg btn-block" type="submit">Registrarse</button>
+                <button class="btn btn-success bordered btn-lg btn-block" type="submit" onclick="registrarUsuario()">Registrarse</button>
               </div>
             </form>
           </div>

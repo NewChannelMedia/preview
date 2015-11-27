@@ -181,7 +181,7 @@
           <div class="col-md-12">
             <h2>Subscríbete para obtener noticias de Intermed<sup>&reg;</sup></h2>
             <div class="row">
-              <form class="subscribe-form" action="./index.php" role="form">
+              <form class="subscribe-form" action="./index.php" role="form" method="post" onsubmit="return false;">
                 <div class="form-group col-lg-5 col-md-5 col-sm-6 col-xs-12">
                   <input type="text" class="form-control input-lg" id="nombre" placeholder="Nombre Completo"  autocomplete='off'>
                 </div>
@@ -189,7 +189,7 @@
                   <input type="email" class="form-control input-lg" id="email" placeholder="Correo Electrónico"  autocomplete='off'>
                 </div>
                 <div class="form-group col-lg-2 col-md-2 col-sm-12 col-xs-12">
-                  <button class="btn btn-success bordered btn-lg btn-block" type="submit">Subscríbete</button>
+                  <button class="btn btn-success bordered btn-lg btn-block" type="submit" onclick="newsletter_crear()">Subscríbete</button>
                 </div>
               </form>
               <section class="subscribe-description col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -231,6 +231,7 @@
     <script src="js/jquery-2.1.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/application.js"></script>
+    <script src="js/utils.js"></script>
     <script>
       $(document).ready(function(){
         var speed = 400;
