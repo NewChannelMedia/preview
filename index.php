@@ -39,7 +39,7 @@
         <div class="row">
           <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
             <figure class="text-center">
-              <a href="./index.html">
+              <a href="./index.php">
                 <img class="img-logo" src="img/intermed/logoWhite.png" alt="">
               </a>
             </figure>
@@ -47,8 +47,8 @@
             <br><br>
             <p class="">
               Intermed<sup>®</sup> se encuentra en etapa de desarrollo, pero puedes ver un preview del sistema ahora mismo:<br><br>
-              <a class="btn btn-white bordered btn-lg" href="./sign-in.html">Preview Pacientes</a>
-              <a class="btn btn-white bordered btn-lg" href="./sign-in.html">Preview Medicos</a>
+              <a class="btn btn-white bordered btn-lg" href="./loginPacientes.php">Preview Pacientes</a>
+              <a class="btn btn-white bordered btn-lg" href="./loginMedicos.php">Preview Medicos</a>
             </p>
           </div>
           <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12">
@@ -181,17 +181,20 @@
           <div class="col-md-12">
             <h2>Subscríbete para obtener noticias de Intermed<sup>&reg;</sup></h2>
             <div class="row">
-              <div class="col-md-8 col-md-offset-2 col-subscribe">
-                <form class="subscribe-form form-inline" action="./index.html" role="form">
-                  <div class="form-group">
-                    <input type="email" class="form-control input-lg" id="email" placeholder="Ingresa tu correo"  autocomplete='off'>
-                  </div>
-                  <button class="btn btn-success bordered btn-lg" type="submit">Subscríbete</button>
-                </form>
-                <section class="subscribe-description">
-                  <p>No te preocupes, no enviamos spam ;)</p>
-                </section>
-              </div>
+              <form class="subscribe-form" action="./index.php" role="form">
+                <div class="form-group col-lg-5 col-md-5 col-sm-6 col-xs-12">
+                  <input type="text" class="form-control input-lg" id="nombre" placeholder="Nombre Completo"  autocomplete='off'>
+                </div>
+                <div class="form-group col-lg-5 col-md-5 col-sm-6 col-xs-12">
+                  <input type="email" class="form-control input-lg" id="email" placeholder="Correo Electrónico"  autocomplete='off'>
+                </div>
+                <div class="form-group col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                  <button class="btn btn-success bordered btn-lg btn-block" type="submit">Subscríbete</button>
+                </div>
+              </form>
+              <section class="subscribe-description col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <p>No te preocupes, no enviamos spam ;)<br>Puedes leer nuestra politica de privacidad.</p>
+              </section>
             </div>
           </div>
         </div>
