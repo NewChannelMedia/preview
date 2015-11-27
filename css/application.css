@@ -124,6 +124,13 @@ html {
    width: 320px;
    height: auto;
  }
+ .jumbotron .img-lap {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: auto;
+   height: 100%;
+ }
  @media screen and (max-width: 800px) {
    .jumbotron .img-iPhone {
      margin-top: 50px;
@@ -269,6 +276,14 @@ html {
   width: 320px;
   height: auto;
 }
+.features-section .img-lap {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+}
 .features-section .img-iPhone.margin-top {
   top: -40px;
 }
@@ -332,27 +347,9 @@ html {
   height: auto;
 }
 
-@media screen and (max-width: 800px) {
-  .col-features {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-    text-align: center;
-  }
-}
-@media screen and (max-width: 640px) {
-  .col-features {
-    width: 90%;
-  }
-}
-.col-features.features-content {
-  padding-top: 100px;
-}
-@media screen and (max-width: 800px) {
-  .col-features.features-content {
-    padding-top: 0;
-  }
+.col-features {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .subscribe-section {
