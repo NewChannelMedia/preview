@@ -37,7 +37,9 @@
       <div class="bg-cover"></div>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
+          <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs">
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
             <figure class="text-center">
               <a href="./index.php">
                 <img class="img-logo" src="img/intermed/logoWhite.png" alt="">
@@ -193,7 +195,9 @@
                 </div>
               </form>
               <section class="subscribe-description col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <p>No te preocupes, no enviamos spam ;)<br>Puedes leer nuestra politica de privacidad.</p>
+                <p>No te preocupes, no enviamos spam ;)<br>
+                  Lee nuestros <a class="text-white" href="terms.php">Terminos y Politica de Privacidad</a>.
+                </p>
               </section>
             </div>
           </div>
@@ -210,9 +214,6 @@
             </section>
           </div>
           <div class="col-md-4 col-footer col-padding">
-            <!--<section class="text-center">
-              <p>Be sure to read <a href="#fakelinks">Terms</a> and <a href="#fakelinks">Privacy Policy</a>.</p>
-            </section>-->
             <ul class="social-media-links">
               <li><a class="fa fa-twitter tw" href="#fakelinks"></a></li>
               <li><a class="fa fa-facebook fb" href="#fakelinks"></a></li>

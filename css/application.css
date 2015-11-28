@@ -615,6 +615,8 @@ html {
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 0;
+  height: 100.5%;
 }
 .sign-in-up .bg-cover {
   position: fixed;
@@ -707,4 +709,56 @@ html {
 hr {
   border-top: 2px solid #ffffff!important;
   margin: 0 auto!important;
+}
+
+.text-white {
+  color: #ffffff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.text-white:hover,
+.text-white:active,
+.text-white:focus{
+  color: #ffffff!important;
+  text-decoration: underline!important;
+}
+
+
+.intern {
+  display: block;
+  height: 120px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  background-color: #2e2f41;
+  background-image: url(../img/bg-2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-box-shadow: 0 0 15px rgba(10, 10, 10, .7);
+  -moz-box-shadow: 0 0 15px rgba(10, 10, 10, .7);
+  box-shadow: 0 0 15px rgba(10, 10, 10, .7);
+  position: relative;
+}
+
+.logo-container {
+  position: relative;
+  display: inline-block;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.intern-logo {
+  height: 80px;
+  margin-top: 22px;
+  margin-bottom: 18px;
+}
+
+.features-section.intern-section {
+  margin-top: 0;
+}
+.nobg {
+  background-image: none;
 }
