@@ -150,7 +150,7 @@ function cerrarSesion(){
     async: true,
     success: function (result) {
       if (result.success){
-        window.location.href = "/preview";
+        window.location.href = "/";
       }
     },
     error: function () {

@@ -1,4 +1,11 @@
-<!DOCTYPE html>
+<?php
+session_start();
+if (!isset($_SESSION['session_id']) || !isset($_SESSION['sesiones'][$_SESSION['session_id']]) || $_SESSION['sesiones'][$_SESSION['session_id']]['tipo'] != "M"){
+  header('Location: /');
+} else {
+  $sesion = $_SESSION['sesiones'][$_SESSION['session_id']];
+}
+?><!DOCTYPE html>
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->

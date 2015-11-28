@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['session_id']) || !isset($_SESSION['sesiones'][$_SESSION['session_id']]) || $_SESSION['sesiones'][$_SESSION['session_id']]['tipo'] != "P"){
-  header('Location: /preview');
+  header('Location: /');
 } else {
   $sesion = $_SESSION['sesiones'][$_SESSION['session_id']];
 }
