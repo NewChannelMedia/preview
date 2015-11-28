@@ -37,7 +37,9 @@
       <div class="bg-cover"></div>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-5 col-md-5 col-sm-6 col-xs-12">
+          <div class="col-lg-1 col-md-1 col-sm-1 hidden-xs">
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12">
             <figure class="text-center">
               <a href="./index.php">
                 <img class="img-logo" src="img/intermed/logoWhite.png" alt="">
