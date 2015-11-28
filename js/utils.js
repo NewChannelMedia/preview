@@ -2,7 +2,7 @@ function iniciarSesion(){
   var tipoUsuario = $('#tipoUsuario').val();
   var usuario = $('#usuario').val();
   var contrasena = $('#contraseña').val();
-  if (usuario != "" && contrasena != ""){
+  if (usuario != '' && contrasena != ''){
     $.ajax( {
       url: 'codigo/session_iniciar.php',
       type: "POST",
@@ -10,14 +10,19 @@ function iniciarSesion(){
       data: {'tipoUsuario':tipoUsuario,'usuario':usuario,'contrasena':contrasena},
       async: true,
       success: function (result) {
-        console.log('RESULT : ' +JSON.stringify(result['session_id']));
         if (result['session_id'] >= 0){
             $('#usuario').focus();
             $('#usuario').val('');
             $('#contraseña').val('');
-           console.log('sesion iniciada');
+            if (tipoUsuario == "M"){
+              console.log('Redireccionar perfil medico');
+              window.location.href = "perfilMedico.php";
+            } else if (tipoUsuario == "P"){
+              window.location.href = "perfilPaciente.php";
+            }
         } else {
-          console.log('Usuario no existe');
+          hasError('usuario');
+          hasError('contraseña');
         }
       },
       error: function () {
@@ -26,9 +31,9 @@ function iniciarSesion(){
     } );
   } else {
     if (usuario == ""){
-      $('#usuario').focus();
+      hasError('usuario');
     } else {
-      $('#contraseña').focus();
+      hasError('contraseña');
     }
   }
 }
@@ -47,6 +52,13 @@ function newsletter_crear(){
         if (result.success){
           $('#nombre').val('');
           $('#email').val('');
+          $('#email').focus();
+          $('#nombre').focus();
+          //POPUP con success
+          $('#resultNewsletter').html('<div class="alert alert-success" role="alert"><strong>¡Bien!</strong> Te has registrado a nuestro newsletter de manera exitosa.</div>');
+          setTimeout(function(){
+            $('#resultNewsletter').fadeOut(300, function(){ $(this).remove();});
+          },5000);
         }
       },
       error: function () {
@@ -55,11 +67,9 @@ function newsletter_crear(){
     } );
   } else {
     if (nombre == ""){
-      //Agregar a input nombre clase de error
-      $('#nombre').focus();
+      hasError('nombre');
     } else {
-      //Agregar a input email clase de error
-      $('#email').focus();
+      hasError('email');
     }
   }
 }
@@ -109,6 +119,12 @@ function registrarUsuario(){
             $('#especialidad').val('');
             $('#subespecialidad').val('');
             document.getElementById("terminos").checked = false;
+
+            if (tipoUsuario == "M"){
+              window.location.href = "perfilMedico.php";
+            } else if (tipoUsuario == "P"){
+              window.location.href = "perfilPaciente.php";
+            }
           }
         },
         error: function () {
@@ -117,14 +133,45 @@ function registrarUsuario(){
       } );
   } else {
     if (nombre == ""){
-      $('#nombre').focus();
+      hasError('nombre');
     } else if (correoReg == ""){
-      $('#correoReg').focus();
+      hasError('correoReg');
     } else {
-      $('#passReg').focus();
+      hasError('passReg');
     }
   }
 }
+
+function cerrarSesion(){
+  $.ajax( {
+    url: 'codigo/session_cerrar.php',
+    type: "POST",
+    dataType: 'JSON',
+    async: true,
+    success: function (result) {
+      if (result.success){
+        window.location.href = "/preview";
+      }
+    },
+    error: function () {
+      console.log( "Error: AJax dead :(" );
+    }
+  } );
+}
+
+function hasError(id){
+  var parent = $('#'+id).parent();
+  parent.find('.form-control-feedback').remove();
+  parent.removeClass('has-error has-feedback');
+  parent.append('<span class="fa fa-times form-control-feedback" aria-hidden="true"></span>');
+  parent.addClass('has-error has-feedback');
+  $('#'+id).focus();
+  $('#'+id).focusout(function(){
+    parent.find('.form-control-feedback').remove();
+    parent.removeClass('has-error has-feedback');
+  });
+}
+
 function sticky_relocate() {
     var window_top = $(window).scrollTop();
     var div_top = $('#sticky-anchor').offset().top;
@@ -134,10 +181,13 @@ function sticky_relocate() {
         $('.sticky').removeClass('stick');
     }
 }
-$(function () {
-    $(window).scroll(sticky_relocate);
-    sticky_relocate();
-});
+
+if ( location.pathname === '/perfilMedico.php' ) {
+  $(function () {
+      $(window).scroll(sticky_relocate);
+      sticky_relocate();
+  });
+}
 
 $(document).ready(function(){
   $("#listaEspecialidades a").on('click', function(event) {

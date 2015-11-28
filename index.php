@@ -15,6 +15,7 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/application.css" rel="stylesheet">
     <link href="css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="favicon.ico" rel="shortcut icon">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -183,7 +184,7 @@
           <div class="col-md-12">
             <h2>Subscríbete para obtener noticias de Intermed<sup>&reg;</sup></h2>
             <div class="row">
-              <form class="subscribe-form" action="./index.php" role="form" method="post" onsubmit="return false;">
+              <form class="subscribe-form" action="./index.php" role="form" method="post" onsubmit="newsletter_crear();return false;">
                 <div class="form-group col-lg-5 col-md-5 col-sm-6 col-xs-12">
                   <input type="text" class="form-control input-lg" id="nombre" placeholder="Nombre Completo"  autocomplete='off'>
                 </div>
@@ -191,7 +192,7 @@
                   <input type="email" class="form-control input-lg" id="email" placeholder="Correo Electrónico"  autocomplete='off'>
                 </div>
                 <div class="form-group col-lg-2 col-md-2 col-sm-12 col-xs-12">
-                  <button class="btn btn-success bordered btn-lg btn-block" type="submit" onclick="newsletter_crear()">Subscríbete</button>
+                  <button class="btn btn-success bordered btn-lg btn-block" type="submit">Subscríbete</button>
                 </div>
               </form>
               <section class="subscribe-description col-lg-12 col-md-12 col-sm-12 col-xs-12">
