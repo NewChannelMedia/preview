@@ -4,7 +4,7 @@ $(function() {
   /*  Anchor Link
   /*-----------------------------------------------------------------------------------*/
   $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
       || location.hostname == this.hostname) {
 
       var target = $(this.hash);
@@ -22,5 +22,5 @@ $(function() {
   /*  Tooltips
   /*-----------------------------------------------------------------------------------*/
   $('.tooltip-side-nav').tooltip();
-  
+
 });

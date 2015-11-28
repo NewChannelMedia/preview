@@ -210,7 +210,9 @@
         <div class="row">
           <div class="col-md-4 col-footer">
             <section>
-              <img class="logo" src="img/intermed/logoWhite.png">
+              <a href="./index.php">
+                <img class="logo" src="img/intermed/logoWhite.png">
+              </a>
             </section>
           </div>
           <div class="col-md-4 col-footer col-padding">

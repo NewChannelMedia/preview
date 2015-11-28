@@ -93,7 +93,7 @@
         <div class="row clearfix">
           <article class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2 text-justify">
             <h1>Privacidad y uso de Datos</h1>
-            
+
             <p>&nbsp;</p>
           </article>
         </div>
@@ -134,7 +134,9 @@
         <div class="row">
           <div class="col-md-4 col-footer">
             <section>
-              <img class="logo" src="img/intermed/logoWhite.png">
+              <a href="./index.php">
+                <img class="logo" src="img/intermed/logoWhite.png">
+              </a>
             </section>
           </div>
           <div class="col-md-4 col-footer col-padding">
