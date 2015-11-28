@@ -16,6 +16,7 @@
     <title>Intermed | LogIn</title>
     <link href="css/application.css" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="favicon.ico" rel="shortcut icon">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -40,7 +41,7 @@
         <section class="sign-in-up-content">
           <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-10 col-xs-10 col-lg-offset-3 col-md-offset-3 col-sm-offset-1 col-xs-offset-1">
-              <form class="sign-in-up-form" role="form" method="post" onsubmit="return false;" autocomplete="off">
+              <form class="sign-in-up-form" role="form" method="post" onsubmit="iniciarSesion();return false;" autocomplete="off">
                 <input type="hidden" id="tipoUsuario" value="P">
                 <div class="form-group">
                   <input class="form-control input-lg" id="usuario" name="usuario" type="email" placeholder="Usuario">
@@ -48,7 +49,7 @@
                 <div class="form-group">
                   <input class="form-control input-lg" id="contraseña" name="contrasena" type="password" placeholder="Contraseña">
                 </div>
-                <button class="btn btn-success bordered btn-lg btn-block" type="submit" onclick="iniciarSesion()">Entrar</button>
+                <button class="btn btn-success bordered btn-lg btn-block" type="submit">Entrar</button>
               </form>
             </div>
           </div>

@@ -16,6 +16,7 @@
     <title>Intermed | LogIn</title>
     <link href="css/application.css" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="favicon.ico" rel="shortcut icon">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -40,7 +41,7 @@
         <section class="sign-in-up-content">
           <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-10 col-xs-10 col-lg-offset-3 col-md-offset-3 col-sm-offset-1 col-xs-offset-1">
-              <form class="sign-in-up-form" role="form" method="post" onsubmit="return false;" autocomplete="off">
+              <form class="sign-in-up-form" role="form" method="post" onsubmit="iniciarSesion();return false;" autocomplete="off">
                 <input type="hidden" id="tipoUsuario" value="M">
                 <div class="form-group">
                   <input class="form-control input-lg" id="usuario" name="usuario" type="email" placeholder="Usuario">
@@ -48,7 +49,7 @@
                 <div class="form-group">
                   <input class="form-control input-lg" id="contraseña" name="contrasena" type="password" placeholder="Contraseña">
                 </div>
-                <button class="btn btn-success bordered btn-lg btn-block" type="submit" onclick="iniciarSesion()">Entrar</button>
+                <button class="btn btn-success bordered btn-lg btn-block" type="submit">Entrar</button>
               </form>
             </div>
           </div>
@@ -56,7 +57,7 @@
         <hr>
         <section class="sign-in-up-content">
           <div class="row">
-            <form class="sign-in-up-form" action="./loginMedicos.php" role="form" method="post" onsubmit="return false;">
+            <form class="sign-in-up-form" action="./loginMedicos.php" role="form" method="post" onsubmit="registrarUsuario();return false;">
               <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1">
                 <div class="row">
                   <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -94,7 +95,7 @@
                 </div>
               </div>
               <div class="col-lg-6 col-md-6 col-sm-10 col-xs-10 col-lg-offset-3 col-md-offset-3 col-sm-offset-1 col-xs-offset-1">
-                <button class="btn btn-success bordered btn-lg btn-block" type="submit" onclick="registrarUsuario()">Registrarse</button>
+                <button class="btn btn-success bordered btn-lg btn-block" type="submit">Registrarse</button>
               </div>
             </form>
           </div>
